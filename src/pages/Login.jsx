@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";  // import the Link component
 
 const Login = () => {
   return (
@@ -20,6 +21,8 @@ const Login = () => {
       >
         Login
       </button>
+
+      <Link to="/register">Don't have an account? Register here</Link>
     </div>
   );
 };
