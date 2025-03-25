@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Tiana {
+  color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: rgb(3, 3, 29);
+    line-height: 2;
+    word-spacing: 1px;
+    display: flex;
+      justify-content: space-between;
+      padding: 60px;
+      gap: 3px;
+}
+.brief {
+  width: 50%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hello {
+  color: goldenrod;
+}
+
+.brief h2 {
+  padding: 10px 0px;
+  color: white;
+}
+
+button {
+  background-color: goldenrod;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+
+img {
+  border-radius: 10px;
+  rotate: 340deg;
+  height: 350px;
 }
