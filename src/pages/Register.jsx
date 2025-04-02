@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router';
 const Register = () => {
   return (
@@ -6,7 +6,7 @@ const Register = () => {
 
         <h1>This is our register page</h1>
 
-        <Link to='/login'>Already have an account? Login here</Link>
+        <Link to="/login">Already have an account? Login here</Link>
     
       
     </div>

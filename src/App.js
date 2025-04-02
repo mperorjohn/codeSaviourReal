@@ -4,8 +4,9 @@ import ForgetPassword from './pages/ForgetPassword';
 import Register from './pages/Register';
 import Home from './pages/Home';
 import CheckoutPage from './pages/CheckoutPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Tiana from './pages/Tiana';
-import  {BrowserRouter as Router, Routes, Route} from 'react-router';
+
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
