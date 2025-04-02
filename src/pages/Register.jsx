@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 const Register = () => {
   return (
     <div>
 
         <h1>This is our register page</h1>
 
-        <Link to="/login">Already have an account? Login here</Link>
+        <Link style={{ 
+            textDecoration: 'none',
+            color: 'black'  
+
+         }} to="/login">Already have an account? Login here</Link>
     
       
     </div>
