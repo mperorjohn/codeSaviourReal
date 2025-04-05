@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import CheckoutPage from './pages/CheckoutPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Tiana from './pages/Tiana';
+import RegisterTiana from './pages/RegisterTiana';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/forgetpassword" element={<ForgetPassword />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path='/tiana' element={<Tiana />} />
+          <Route path='/registerTiana' element={<RegisterTiana />} />
 
         </Routes>
       </Router>
