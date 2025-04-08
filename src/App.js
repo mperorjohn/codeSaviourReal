@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Login from './pages/Login';
 import ForgetPassword from './pages/ForgetPassword';
@@ -7,6 +8,8 @@ import CheckoutPage from './pages/CheckoutPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Tiana from './pages/Tiana';
 import RegisterTiana from './pages/RegisterTiana';
+import John from './pages/John';
+
 
 
 function App() {
@@ -25,6 +28,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path='/tiana' element={<Tiana />} />
           <Route path='/registerTiana' element={<RegisterTiana />} />
+          <Route path='/john' element={<John />} />
 
         </Routes>
       </Router>
