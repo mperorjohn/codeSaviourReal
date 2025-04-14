@@ -4,6 +4,8 @@ import image from "../images/IMG_20210214_130932_054.jpg";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from 'react-router';
+import { Image } from "react-bootstrap";
+
 
 const Tiana = () => {
     let person = {
@@ -28,8 +30,8 @@ const Tiana = () => {
     siblings: ["Victor", "Joy"]
 }
     return (
-            <Card >
-                <Card.Img variant="top" src={image} className="img-fluid w-50" rounded/> 
+                <Card>
+                    <Image variant="top" src={image} className="img-fluid w-10" sizes="30" roundedCircle/>
                 <Card.Body>
                     <Card.Title>My Profile</Card.Title>
                     <Card.Subtitle>Let me introduce myself</Card.Subtitle>
@@ -43,7 +45,7 @@ const Tiana = () => {
             
             
             
-        </Card>
+               </Card>
             
     )
     
