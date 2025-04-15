@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Avatar from './Avatar'
-const Card = ({title, image, alt, description, price, buttonName, buttonDisable}) => {
+const Card = ({title, image, alt, description, price, buttonName, buttonDisable, onclick}) => {
 
     // const {title, description, image} = props
   return (
@@ -12,7 +12,7 @@ const Card = ({title, image, alt, description, price, buttonName, buttonDisable}
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{description}</p>
                 <p className="card-text">Price: {price}</p>
-                <Button name={buttonName} disabled={buttonDisable} />
+                <Button name={buttonName} disabled={buttonDisable} onclick={onclick}/>
                
             </div>
         </div>
