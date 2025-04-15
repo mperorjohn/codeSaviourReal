@@ -1,13 +1,13 @@
 import React from 'react'
 import Button from './Button'
-
+import Avatar from './Avatar'
 const Card = ({title, image, alt, description, price, buttonName, buttonDisable}) => {
 
     // const {title, description, image} = props
   return (
     <div>
         <div className="card" style={{width: "20rem"}}>
-            <img src={image} className="card-img-top" alt={alt} />
+           <Avatar image={image} alt={alt}/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{description}</p>
