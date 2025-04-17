@@ -31,7 +31,7 @@ const Tiana = () => {
 }
     return (
                 <Card>
-                    <Image variant="top" src={image} className="img-fluid w-10" sizes="30" roundedCircle/>
+                    <Image variant="top" src={image} className="img-fluid w-5" sizes="30" roundedCircle/>
                 <Card.Body>
                     <Card.Title>My Profile</Card.Title>
                     <Card.Subtitle>Let me introduce myself</Card.Subtitle>

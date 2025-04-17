@@ -17,10 +17,8 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
+   
+     
       <Router>
         <Header />
         <Routes>
@@ -34,12 +32,10 @@ function App() {
           <Route path='/john' element={<John />} />
           <Route path='/testing' element={<Testing />} />
         </Routes>
-        <Contact name="Omonola Christiana" email="christianaomonola99@gmail.com" phoneNumber="08164905260" gitHub="https://github.com/Tiaanaa" linkedIn="www.linkedin.com/in/omonolachristiana"/>
         <Footer  companyName="John's Company" companyAddress="Lagos Ibadan Express"/>
 
       </Router>
       
-    </div>
   );
 }
 
