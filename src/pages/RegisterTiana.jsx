@@ -5,10 +5,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Contact from "../components/Contact";
-import Card from "../components/Card";
 import Avatar from "../components/Avatar";
-import image from "../images/IMG_20210214_130932_054.jpg";
-
 
 
 const RegisterTiana = () => {
