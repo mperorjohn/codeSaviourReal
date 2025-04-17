@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import image from "../images/IMG_20210214_130932_054.jpg";
@@ -6,47 +6,63 @@ import TextArea from "../components/TextArea";
 
 const Testing = () => {
   const isDeactivate = false;
+  const [isStyled, setIsStyled] = useState(true);
 
-  //    onclick testing
   const testClick = () => {
     alert("Button test was clicked!");
   };
 
-  
+  const handleClick = () => {
+    setIsStyled(!isStyled);
+  };
+
+  const myStyle = {
+      backgroundColor: isStyled ? "white" : "black",
+    color: isStyled ? "black" : "white",
+      width: "20rem",
+      minHeight: "10vh", // Make sure background color covers the whole screen
+      transition: "all 0.3s ease" // Smooth transition
+    
+  };
 
   return (
-    <div className="container mt-5">
-      <h1 className="text-center">This is Testing Page</h1>
-      <div className="d-flex justify-content-center mt-5 mb-5">
-        <Button name="Click Me" disabled={false} onclick={testClick} />
-      </div>
-      <div className="d-flex justify-content-center">
-        <Button name="Disabled Button" disabled={true} />
-      </div>
-      <Card
-        title={"My Profile"}
-        image={image}
-        alt={"christiana"}
-        description={"This is christiana from one bush in yola"}
-        price={300}
-        buttonName={"Buy me"}
-        buttonDisable={false}
-        onclick={ ()=> {
-          alert("Card button was clicked!");
-        }
-        }
-      />
-      <div>
-        <p>Make enquuiry</p>
-        <TextArea
-          name={"contactMessage"}
-          id={"contactMessage"}
-          defaultMessage={"Enter your message here"}
-          disable={isDeactivate}
-          max={100}
-          min={10}
-          row={50}
-        />
+    <div style= {{color:"white"}} >
+      <div className="container pt-5">
+        <h1 className="text-center">This is Testing Page</h1>
+
+        <div className="d-flex justify-content-center mt-5 mb-3">
+          <Button name="Click Me" disabled={false} onclick={testClick} />
+        </div>
+
+        <div className="d-flex justify-content-center mb-4">
+          <Button name="Test Button" disabled={false} onclick={testClick} />
+        </div>
+
+        <div className="mb-5">
+          <Card style={myStyle}
+            title="My Profile"
+            image={image}
+            alt="christiana"
+            description="I am Omonola Christiana from the city of Yola, Adamawa state Nigeria"
+            price={300}
+            buttonName="Buy me"
+            buttonDisable={false}
+            onclick={handleClick}
+          />
+        </div>
+
+        <div>
+          <p>Make enquiry</p>
+          <TextArea
+            name="contactMessage"
+            id="contactMessage"
+            defaultMessage="Enter your message here"
+            disable={isDeactivate}
+            max={100}
+            min={10}
+            row={50}
+          />
+        </div>
       </div>
     </div>
   );
