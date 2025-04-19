@@ -17,16 +17,15 @@ const Testing = () => {
   };
 
   const myStyle = {
-      backgroundColor: isStyled ? "white" : "black",
+    backgroundColor: isStyled ? "white" : "black",
     color: isStyled ? "black" : "white",
-      width: "20rem",
-      minHeight: "10vh", // Make sure background color covers the whole screen
-      transition: "all 0.3s ease" // Smooth transition
-    
+    width: "20rem",
+    minHeight: "10vh",
+    transition: "all 0.3s ease",
   };
 
   return (
-    <div style= {{color:"white"}} >
+    <div style={{ color: "white" }}>
       <div className="container pt-5">
         <h1 className="text-center">This is Testing Page</h1>
 
@@ -39,7 +38,8 @@ const Testing = () => {
         </div>
 
         <div className="mb-5">
-          <Card style={myStyle}
+          <Card
+            style={myStyle}
             title="My Profile"
             image={image}
             alt="christiana"
