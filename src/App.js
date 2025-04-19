@@ -12,6 +12,7 @@ import John from './pages/John';
 import Footer from './components/Footer';
 import Testing from './pages/Testing';
 import Contact from './components/Contact';
+import Calulator from './pages/Calulator';
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/registerTiana' element={<RegisterTiana />} />
           <Route path='/john' element={<John />} />
           <Route path='/testing' element={<Testing />} />
+          <Route path='/calculator' element={<Calulator />} />
         </Routes>
         <Footer  companyName="John's Company" companyAddress="Lagos Ibadan Express"/>
 
