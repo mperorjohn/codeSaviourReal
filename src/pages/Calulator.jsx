@@ -35,7 +35,7 @@ const Calulator = () => {
 
     }
     
-  }, [firstNumber, secondNumber]);
+  }, [firstNumber, secondNumber, operator]);
 
   // useEffect to hanlder result when either firstNumber or secondNumber is empty
 /*  useEffect(() => {
@@ -63,7 +63,7 @@ const Calulator = () => {
               <Row className="mb-3 d-grid gap-2 ">
                 <Col xs={12} md={2}>
                   <select className="form-select mt-2 mb-2" onChange={handleOperatorChange}>
-              <option value="" disabled selected>
+              <option value={operator} disabled selected>
                 Select Operator
               </option>
               <option value="add">Add</option>
