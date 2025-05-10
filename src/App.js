@@ -11,16 +11,13 @@ import RegisterTiana from './pages/RegisterTiana';
 import John from './pages/John';
 import Footer from './components/Footer';
 import Testing from './pages/Testing';
-import Contact from './components/Contact';
-
+import Calulator from './pages/Calulator';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
+   
+     
       <Router>
         <Header />
         <Routes>
@@ -33,13 +30,12 @@ function App() {
           <Route path='/registerTiana' element={<RegisterTiana />} />
           <Route path='/john' element={<John />} />
           <Route path='/testing' element={<Testing />} />
-        </Routes>
-        <Contact name="Omonola Christiana" email="christianaomonola99@gmail.com" phoneNumber="08164905260" gitHub="https://github.com/Tiaanaa" linkedIn="www.linkedin.com/in/omonolachristiana"/>
-        <Footer  companyName="John's Company" companyAddress="Lagos Ibadan Express"/>
+          <Route path='/calculator' element={<Calulator />} />
+      </Routes>
+      <Footer companyName="John's Company" companyAddress="Lagos Ibadan Express" />
 
       </Router>
       
-    </div>
   );
 }
 

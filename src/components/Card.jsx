@@ -1,18 +1,18 @@
 import React from 'react'
 import Button from './Button'
-
-const Card = ({title, image, alt, description, price, buttonName, buttonDisable}) => {
+import Avatar from './Avatar'
+const Card = ({title, image, alt, description, price, buttonName, buttonDisable, onclick, style}) => {
 
     // const {title, description, image} = props
   return (
-    <div>
-        <div className="card" style={{width: "20rem"}}>
-            <img src={image} className="card-img-top" alt={alt} />
-            <div className="card-body">
+    <div >
+      <div className="card" style= {style}>
+           <Avatar image={image} alt={alt}/>
+            <div className="card-body" >
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{description}</p>
                 <p className="card-text">Price: {price}</p>
-                <Button name={buttonName} disabled={buttonDisable} />
+                <Button name={buttonName} disabled={buttonDisable} onclick={onclick}  />
                
             </div>
         </div>
